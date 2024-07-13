@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "SHOW UBUNTU SERVER VERSION"
+echo "++++++++++++++++++++++++++"
+lsb_release -a
+
+echo "SHOW USERS WITH BASH INSTALLED"
+echo "++++++++++++++++++++++++++++++"
+cat /etc/passwd | grep "bash"
+
+echo "SHOW OPEN PORTS"
+echo "+++++++++++++++"
+netstat -ntlp
